@@ -133,7 +133,7 @@ footer{
     align-items: center;
     position: relative;
     overflow: visible;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 .textSection{
     position: relative;
@@ -268,7 +268,7 @@ footer{
 #footer-wrapper{ /*Adds the main pattern to a small "slither" above the footer - asethtics */
     padding-top: 50px;
     margin-top: 100px;
-    background-image: url(../img/bg13.png);
+    /*background-image: url(../img/bg13.png); Disabled for aesthic reasons. I changed my mind.*/
 }
 #sticky-note{
     position: absolute;
