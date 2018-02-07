@@ -7,7 +7,7 @@
 
     <meta name="description" content="Centennial High School's Worldfest celebrates Earth's eclectic cultural history.">
     <meta name="author" content="Bryce Plunkett">
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 
     <title>Worldfest</title>
 
@@ -141,10 +141,6 @@
   </head>
 
   <body id="top" class="hideElement">
-    <!---Background image --->
-    <div id="background" style="position: fixed; z-index: -1; min-height: 100vh; min-width: 100vw; display: flex; background-image: url(img/map.jpg);">
-        <!---<img style="position: fixed; flex-shrink: 0; min-width: 100%; min-height: 100%; left: -40%; " src="img/world.jpg"><img> --->
-    </div>
 
     <div class="container-fluid" style="padding: 0px;">
       <!-- Static navbar -->
@@ -158,8 +154,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#home" style="pointer-events: none; color: white;">
-            <span class="fa fa-globe fa-1x"></span>
-            Worldfest
+              <img src="./img/logo.png">
             </a> <!--- Easier just to use a link (that boostrap has built in) to get equal heights than create a flexbox. Disabling pointer-events really just makes it a text box -->
           </div>
           <div id="navbar" class="navbar-collapse collapse">
@@ -180,9 +175,6 @@
             <!---Slider --->
         <div id="sliderWrapper" class="container-fluid" style="padding: 0px; z-index: 2; position: relative;">
 
-        </div>
-        <div class="title-style website-title">
-            <h1 class="website-title-text wow fadeInDown">Worldfest</h1>
         </div>
         <div class="container-fluid" style="padding: 0px; height: 100%; width: 100%; margin: 0px;">
             <div class="section wow fadeInUp" style="margin-top: 20px;" id="1">
@@ -217,7 +209,7 @@
                     <div class="button-wrapper container-fluid">
                         <a class="button-down" href="#2">
                             <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                 <i class="fa fa-angle-double-down fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
@@ -285,7 +277,7 @@
                     <div class="button-wrapper container-fluid">
                         <a class="button-down" href="#3">
                             <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                 <i class="fa fa-angle-double-down fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
@@ -295,7 +287,7 @@
              <div class="section wow fadeInUp" id="3" style="z-index: 0; position: relative; text-align: center; display: block;">
                 <h1 class="title-style">Previous Sponsors:</h1>
                 <div>
-                    <div class="swiper-container" style="background-image: url(img/bg2.png); height: 400px; width: 100%;">
+                    <div class="swiper-container" style=" box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2); height: 400px; width: 100%;">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/ca.png"></div>
                             <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/csc.png"></div>
@@ -314,7 +306,7 @@
                     <div class="button-wrapper container-fluid"> <!--Swiper has weird visibility rules so will place in separate div (not absolute) --->
                         <a class="button-down" href="#4">
                             <span class="fa-stack fa-2x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                 <i class="fa fa-angle-double-down fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
@@ -367,7 +359,7 @@
                             <div class="col-sm-3">
                                 <a href="http://chsnhs.org/">
                                     <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                         <i class="fa fa-university fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
@@ -375,7 +367,7 @@
                             <div class="col-sm-3">
                                 <a onClick="email()">
                                     <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                         <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
@@ -383,7 +375,7 @@
                             <div class="col-sm-3">
                                 <a id="" onClick="date()">
                                     <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                         <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
@@ -391,7 +383,7 @@
                             <div class="col-sm-3">
                                 <a onclick="credits();">
                                     <span class="fa-stack fa-2x">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x background-icon"></i>
                                         <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
                                     </span>
                                 </a>
