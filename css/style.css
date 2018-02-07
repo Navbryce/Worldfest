@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans'); /* Supposed to be a good font. */
+@font-face {
+    font-family: Aileron;
+    src: url(../fonts/Aileron-Heavy-webfont.woff);
+    font-weight: bold;
+}
 
 @media (max-width: 767px) {
   .container-fluid, .row {
@@ -34,10 +39,15 @@ footer{
     overflow: hidden;
     width: 100%;
     padding: 0px;
-    background-color: #ff7771;
-    box-shadow: 2px 8px 16px 16px rgba(0,0,0,0.2);
-    color: white;
+    background-color: white;
+    box-shadow: 0px -8px 16px 0px rgba(0,0,0,0.2);
+    color: black;
 }
+h2 {
+  color: #ff7771;
+  font-family: 'Aileron', Arial, heavy;
+}
+
 #footer{
     height: auto;
 }
@@ -70,11 +80,44 @@ footer{
     justify-content: center;
     flex: 1;
 }
+.align-right {
+  text-align: right;
+}
+.background-icon{
+  color: #ff7771;
+}
+a:hover .background-icon{
+  color: #8e3f3b;
+}
+.box {
+  border-bottom: dashed 2px rgb(200, 200, 200);
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  padding-top: 50px;
+}
+.box > div {
+  flex: 1;
+  max-width: 450px;
+}
+.box > div:first-child {
+  margin-left: 10%;
+}
+.box > div:last-child {
+  margin-right: 10%;
+  margin-left: 4%;
+}
+.dashed-border-bottom {
+  border-bottom: dashed 2px rgb(200, 200, 200);
+}
 .hideElement{
     opacity: 0;
     transition: none;
     background: none !important;
 }
+
 .parallax-window{
     min-height: 10000px;
     background: transparent;
@@ -90,43 +133,6 @@ footer{
     padding: 0px;
     height: 100%;
 }
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-}
 .fitImageToSlider{
     width: 240px;
     height: 240px;
@@ -139,17 +145,76 @@ footer{
     overflow: visible;
     margin-top: 200px;
 }
-.textSection{
+.textSection {
+    /*background-color: #daf2ffce;*/
+    border-bottom: dashed 2px rgb(200, 200, 200);
+
+    padding: 0;
     position: relative;
-    padding: 0px;
-    background-color: white;
-    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+}
+/* Main title of website */
+.title {
+  color: #324149;
+  font-family: 'Aileron', Arial, heavy;
+  margin: 0;
+  padding: 0;
+  font-size: 45pt;
+  line-height: 39pt;
+}
+.title-box {
+  display: inline-block;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-left: 1%;
+}
+.title-box > div{
+  display: inline-block;
+  margin-bottom: 40px;
+  float: left;
+}
+.title-image > img{
+  width: 100%;
+}
+.title-sub {
+  color: #97c8ff;
+  font-family: 'Aileron', Arial, heavy;
+  margin: 0;
+  padding: 0;
+  font-size: 20pt;
+}
+.title-sub2 {
+  color: #324149;
+  font-family: 'Aileron', Arial, heavy;
+  margin: 0;
+  padding: 0;
+  font-size: 15pt;
+}
+/* News slide titles */
+.title-style{
+    background-color: #97c8ff9b;
+    color: #ff7771;
+    font-size: 45px;
+    font-style:italic;
+    font-weight: bold;
+    height: auto;
+    margin: 0px;
+    overflow: hidden;
+    padding-left: 20px;
+    white-space: nowrap;
+    width: 100%;
+
 }
 .background-picture{
     image-rendering: -webkit-optimize-contrast;
     background-attachment:fixed;
 }
-
+.margin-sides {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.min-picture {
+  min-width: 200px;
+}
 .nav {
   align-items: center;
   display: flex;
@@ -162,9 +227,9 @@ footer{
 /* Link style */
 .nav >  li a {
   color: #324149 !important;
+  font-family: 'Aileron', Arial, heavy;
   font-size: 12pt !important;
   font-weight: bold;
-
 }
 .navbar > .container-fluid {
 }
@@ -251,36 +316,14 @@ footer{
     width: 50%;
     margin: auto;
 }
-/* News slide titles */
-.title-style{
-    padding-left: 20px;
-    font-size: 45px;
-    color: white;
-    width: 100%;
-    height: auto;
-    background-color: #ff7771;
-    overflow: hidden;
-    margin: 0px;
 
-}
 .text-padding{
     padding-left: 2%;
     padding-right: 2%;
     padding-top: 25px;
     padding-bottom: 25px;
 }
-/*Website title background*/
-.website-title{
-    margin-top: 0px;
-    margin-bottom: 125px;
-    text-align: center;
-    /*border-top: solid 2px black; */
-    /*border-bottom: solid 2px black; */
-    color: white;
-    background-color: #ff7771;
-    box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.2);
 
-}
 .button-down{
     align-items: center;
     position: absolute;
@@ -295,13 +338,7 @@ footer{
     justify-content: center;
 }
 
-/* Website title text*/
-.website-title-text{
-    text-align: center;
-    font-size: 65px;
-}
 .background-pattern{
-    box-shadow: 2px 1px 2px 1px rgba(0,0,0,0.2);
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -360,7 +397,4 @@ footer{
 }
 .column-border{
     border-right: 2px solid  #97c8ff;
-}
-.background-icon{
-    color: #97c8ff;
 }

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 
     <title>Worldfest</title>
-    
+
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <!-- Fontawesome and fonts--->
@@ -22,18 +22,18 @@
     <!--- JQuery---->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    
+
     <!---Second Image Slider Library --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
-    
-    
+
+
     <!---Animations for on view --->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-    
+
     <script>
-        
+
         //Photoslider, parallax, smoothscroll, and other scripts
         jQuery(document).ready(function(){
             var width = $(window).width();
@@ -46,21 +46,21 @@
                 });
 
             }else{
-                document.getElementById("1").style.marginTop = "0px";   
+                document.getElementById("1").style.marginTop = "0px";
             }
             if(width<1300){ //If the window is less than 1300 px wide, the sticky-note will not be shown
                 document.getElementById("sticky-note").style.display="none";
                 document.getElementById("section2Text").style.marginRight="";
-                
+
 
             }
-            
+
             //Stops the footer text from sliding past the border of the box
             if(width<650){
                 document.getElementById("left-footer-text").style.marginLeft="0px";
             }
 
-     
+
 
             var height = $(window).height();
             //EFFECT CURRENTLY DISABLED BECAUSE IN RETROSPECT, it doesn't look so good
@@ -86,8 +86,8 @@
 
             $('a').smoothScroll({speed: 1500}); //Initiates smoothe scrolling
 
-            
-            
+
+
             //For fading in body
             window.onload = function(){
                 $('body').removeClass('hideElement');
@@ -98,7 +98,7 @@
                 offset: 50
             });
 
-            
+
             //For starting sliders
             new Swiper('.swiper-container', {
                 pagination: '.swiper-pagination',
@@ -111,14 +111,14 @@
                 autoplay: 3000,
                 autoplayDisableOnInteraction: false
             });
-            
+
             //Initialize animations
              var wow = new WOW({
                 mobile: false
              });
              wow.init()
-             
-         
+
+
         });
         function credits(){
             alert("Author: Bryce Plunkett \nPlugins: Bootstrap, Tympanus' Polaroid Photo Slider, FontAwesome, Swiper (Sliders), Wow.js (on scroll animations) and Smoothescroll.js");
@@ -129,7 +129,7 @@
         function date(){
             alert("Worldfest is on March 28th. Don't forget!");
         }
-        
+
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -179,7 +179,7 @@
 
             <!---Slider --->
         <div id="sliderWrapper" class="container-fluid" style="padding: 0px; z-index: 2; position: relative;">
-    
+
         </div>
         <div class="title-style website-title">
             <h1 class="website-title-text wow fadeInDown">Worldfest</h1>
@@ -194,21 +194,21 @@
                                 Filled with the vibrancy of our world’s myriad of cultures, WorldFest is a captivating
 
                                 celebration of the diversity displayed by the students and staff of Centennial High School.
-                                
+
                                 The event features unique opportunities to enjoy ethnic cuisine, dancing, activities, and
-                                
+
                                 artwork, all of which are produced and coordinated by the students themselves. Participants
-                                
+
                                 can gain appreciation for the many aspects of unfamiliar cultures by completing a scavenger
-                                
+
                                 hunt or watching the stunning WorldFest Talent Show. The proceeds from this event are put
-                                
+
                                 towards further developing the multitude of student organizations at Centennial High School.
-                                
+
                                 Mark your calendars for Tuesday, March 28; Centennial’s WorldFest 2017 is not to be
-                                
+
                                 missed!
-                            </p>                       
+                            </p>
                         </div>
                         <div class="col-md-6 col-sm-3">
                             <img src="img/world.jpg" class="img-responsive">
@@ -222,10 +222,10 @@
                             </span>
                         </a>
                     </div>
-                   
+
                 </div>
             </div>
-            
+
             <div class="section" style="" data-stellar-background-ratio="0.3" id="2">
                 <div id="sticky-note" class="wow fadeInRight">
                     <img src="img/note2.png">
@@ -244,7 +244,7 @@
                                             <i class="fa fa-users fa-stack-1x fa-inverse"></i>
                                         </span>
                                     </div>
-   
+
                                     <p>
                                         Come walk through the gallery walk where Centennial High School students will be presenting their boards about cultures they are
                                         familiar with. Whether it is one they identify with or one they feel connected to, the students are experts.
@@ -333,11 +333,11 @@
                             <p><b>Cost: </b> Included in admission!</p>
                             <p> Are you a Project Runway fan? Do you love America’s Got Talent? Then come to the WorldFest Fashion and Talent Show on March 28th! Beginning at 8:00 in the CHS
                                 Auditorium, you can see students showcase their cultural clothing and present important traditions and talents! With clothing and performances from Korea,
-                                India, Pakistan, Sudan, El Salvador, China and more being featured, it is a must-see event that is included in the price of admission! Hope to see you there. 
-                            </p>                       
+                                India, Pakistan, Sudan, El Salvador, China and more being featured, it is a must-see event that is included in the price of admission! Hope to see you there.
+                            </p>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
 
@@ -349,18 +349,18 @@
                     <h4 class="text-right">What is Worldfest?</h4>
                     <p id="left-footer-text" style="margin-left: 70%;" class="text-right">
                             Filled with the vibrancy of our world’s myriad of cultures, WorldFest is a captivating
-                            
+
                             celebration of the diversity displayed by the students and staff of Centennial High School.
 
                     </p>
 
-                
+
                 </div>
                 <div class="col-sm-4 borderRight" style="flex: 1;">
                     <p>Worldfest is on March 28th. For $10 (basic admission), you get 5 meal tickets and access to the classes, talent show, food booths, and gallery walk. Each dollar you pay after the initial $10 gets you another meal ticket.</p>
-                    
+
                 </div>
-                <div class="col-sm-4"> 
+                <div class="col-sm-4">
                     <div id="footer-icons" style="width: 100%; height: 90%;"><!--- Used to center vertically ---->
                         <div class="row-fluid">
                             <div class="col-sm-3">
@@ -368,7 +368,7 @@
                                     <span class="fa-stack fa-2x">
                                         <i class="fa fa-circle fa-stack-2x"></i>
                                         <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>     
+                                    </span>
                                 </a>
                             </div>
                             <div class="col-sm-3">
@@ -399,44 +399,44 @@
                     </div>
                     <p class="text-right" style="margin-right: 10px">Website by Bryce Plunkett</p>
                 </div>
-    
-             
+
+
             </div>
         </footer>
     </div>
-    
+
   </body>
     <!--Javascript loaded at the end to prevent "render-blocking" --->
     <!-- BootStrap JavaScript -->
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    
+
+
         <!--Slider library -->
     <link rel="stylesheet" type="text/css" href="css/component.css" />
 	<script src="js/modernizr.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/photostack.js"></script>
-    
+
     <!---Other scrolling library to change scrolling velocity (No longer being used but I'm going to keep it around just in case I want to add it again-->
     <script src="js/jquery.stellar.js"></script>
-    
+
     <!--Smoothifies scrolling done by anchors.-->
     <script src="js/jquery.smooth-scroll.min.js"></script>
-    
+
     <!--Animation library -->
     <script src="js/wow.min.js"></script>
 
-    
-    
 
-    
-    <!---Second Image Slider Library --->     
+
+
+
+    <!---Second Image Slider Library --->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
-  
+
   <!---Slider Code (Appended in script at top of page when not on mobile) --->
   <script id="sliderCode" type="text/template">
     <section id="slider" class="photostack photostack-start">
@@ -456,7 +456,7 @@
                     <h2 class="photostack-title">Canada Board</h2>
                     <div class="photostack-back">
                         <p>This was one of many gallery walk boards at Worldfest 2016.</p>
-                    </div>                            
+                    </div>
                 </figcaption>
             </figure>
             <figure>

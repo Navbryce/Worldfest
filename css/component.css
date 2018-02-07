@@ -4,14 +4,15 @@
 
 
 .photostack {
-	background-image: url(../img/bg2.png);
+	/*background-image: url(../img/bg.png);*/
+	background-color: rgb(210, 210, 210);
 	position: relative;
 	text-align: center;
 	overflow: hidden;
 }
 
 .js .photostack {
-	height: 100vh;
+	height: 560px;
 }
 
 .photostack-start {
