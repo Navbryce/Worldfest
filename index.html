@@ -33,17 +33,18 @@
 
 
     <script>
-
         //Photoslider, parallax, smoothscroll, and other scripts
         jQuery(document).ready(function(){
             var width = $(window).width();
             //Adds the slider only when the viewport is wider than 600px. In short, anything less than 600 px will not have the slider (mobile devices), in order to increase load speeds
             if(width>600){
+                /*DISABLE SLIDER
                 $('#sliderWrapper').html($('#sliderCode').html());
                 new Photostack( document.getElementById( 'slider'), {
                     callback : function( item ) {
                     }
                 });
+                */
 
             }else{
                 document.getElementById("1").style.marginTop = "0px";
@@ -51,16 +52,12 @@
             if(width<1300){ //If the window is less than 1300 px wide, the sticky-note will not be shown
                 document.getElementById("sticky-note").style.display="none";
                 document.getElementById("section2Text").style.marginRight="";
-
-
             }
 
             //Stops the footer text from sliding past the border of the box
             if(width<650){
                 document.getElementById("left-footer-text").style.marginLeft="0px";
             }
-
-
 
             var height = $(window).height();
             //EFFECT CURRENTLY DISABLED BECAUSE IN RETROSPECT, it doesn't look so good
@@ -80,11 +77,11 @@
                 }
             }
             */
-            $.stellar({
-                horizontalScrolling: false
-            });
 
-            $('a').smoothScroll({speed: 1500}); //Initiates smoothe scrolling
+            $('a').smoothScroll({ // Initiates smoothe scrolling
+              speed: 1500,
+              offset: -120 // Accounts for navbar
+            });
 
 
 
@@ -95,9 +92,8 @@
             //For selecting the section of the navbar that represents the section the user is currently viewing
             $('body').scrollspy({
                 target: '#navBar',
-                offset: 50
+                offset: 150 // accounts for navbar 
             });
-
 
             //For starting sliders
             new Swiper('.swiper-container', {
