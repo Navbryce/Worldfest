@@ -24,8 +24,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <!---Second Image Slider Library --->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.min.css">
 
 
     <!---Animations for on view --->
@@ -92,11 +91,12 @@
             //For selecting the section of the navbar that represents the section the user is currently viewing
             $('body').scrollspy({
                 target: '#navBar',
-                offset: 150 // accounts for navbar 
+                offset: 150 // accounts for navbar
             });
 
             //For starting sliders
             new Swiper('.swiper-container', {
+                lazy: true,
                 pagination: '.swiper-pagination',
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
@@ -295,14 +295,38 @@
                 <div>
                     <div class="swiper-container" style="height: 400px; width: 100%;">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/ca.png"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/csc.png"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/dlc.jpg"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/avid.png"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/chsboosters.png"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/hhpcorp.png"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/msmu.jpg"></div>
-                            <div class="swiper-slide sponsorSlide"><img class="slider-image" src="img/Sponsors/girlscouts.png"></div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/ca.png">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/csc.png">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/dlc.jpg">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/avid.png">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/chsboosters.png">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/hhpcorp.png">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/msmu.jpg">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                            <div class="swiper-slide sponsorSlide">
+                              <img class="swiper-lazy" data-src="img/Sponsors/girlscouts.png">
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
                         </div>
                         <!-- Add Pagination -->
                         <!-- Add Arrows -->
@@ -418,8 +442,6 @@
 	<script src="js/classie.js"></script>
 	<script src="js/photostack.js"></script>
 
-    <!---Other scrolling library to change scrolling velocity (No longer being used but I'm going to keep it around just in case I want to add it again-->
-    <script src="js/jquery.stellar.js"></script>
 
     <!--Smoothifies scrolling done by anchors.-->
     <script src="js/jquery.smooth-scroll.min.js"></script>
@@ -427,121 +449,7 @@
     <!--Animation library -->
     <script src="js/wow.min.js"></script>
 
-
-
-
-
     <!---Second Image Slider Library --->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script>
-
-  <!---Slider Code (Appended using script to page html at top of page when not on mobile) --->
-  <script id="sliderCode" type="text/template">
-    <section id="slider" class="photostack photostack-start">
-        <div>
-            <figure>
-                <img src="img/crowdedhall.jpg" class="fitImageToSlider" alt="bla"/>
-                <figcaption>
-                    <h2 class="photostack-title">Main Hall at Worldfest</h2>
-                    <div class="photostack-back">
-                        <p>Looks fun!</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="img/canadaboard.jpg" class="fitImageToSlider" alt="bla"/>
-                <figcaption>
-                    <h2 class="photostack-title">Canada Board</h2>
-                    <div class="photostack-back">
-                        <p>This was one of many gallery walk boards at Worldfest 2016.</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="img/koreaboard.jpg" class="fitImageToSlider" alt="bla"/>
-                <figcaption>
-                    <h2 class="photostack-title">Korea Board</h2>
-                    <div class="photostack-back">
-                        <p>A beautiful gallery walk board made for Worldfest 2016.</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="img/manlookingatboard.jpg" class="fitImageToSlider" alt="bla"/>
-                <figcaption>
-                    <h2 class="photostack-title">John Weinstein at Gallery Walk</h2>
-                    <div class="photostack-back">
-                        <p>Councilman John Weinstein attended Worldfest in 2016. Expect more special visitors this year...</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="img/mapboard.jpg" class="fitImageToSlider" alt="bla"/>
-                <figcaption>
-                    <h2 class="photostack-title">Map at Worldfest</h2>
-                    <div class="photostack-back">
-                        <p>Every year, Worldfest has a map where attendees can put a "pin" on their place of origin.</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="img/throwbackthursday.jpg" class="fitImageToSlider" alt="bla"/>
-                <figcaption>
-                    <h2 class="photostack-title">Italian Club Food Booth</h2>
-                    <div class="photostack-back">
-                        <p>This booth was at Worldfest 2014. #Throwbackthursday</p>
-                    </div>
-                </figcaption>
-            </figure>
-
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/worldfestposter2.jpg" class="fitImageToSlider" alt="bla"/></a>
-                <figcaption>
-                    <h2 class="photostack-title"></h2>
-                    <div class="photostack-back">
-                        <p> Eos in brute option maiepericula vis at Minim deleniti instructior ei mel, eum et putant argumentum. Ad ludus doming duo.</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/8.jpg" class="fitImageToSlider" alt="bla"/></a>
-                <figcaption>
-                    <h2 class="photostack-title"></h2>
-                    <div class="photostack-back">
-                        <p></p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/worldfestposter1.jpg" class="fitImageToSlider" alt="bla"/></a>
-                <figcaption>
-                    <h2 class="photostack-title"></h2>
-                    <div class="photostack-back">
-                        <p> Eos in brute option maiepericula vis at Minim deleniti instructior ei mel, eum et putant argumentum. Ad ludus doming duo.</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/7.jpg" class="fitImageToSlider" alt="bla"/></a>
-                <figcaption>
-                    <h2 class="photostack-title"></h2>
-                    <div class="photostack-back">
-                        <p> Eos in brute option maiepericula vis at Minim deleniti instructior ei mel, eum et putant argumentum. Ad ludus doming duo.</p>
-                    </div>
-                </figcaption>
-            </figure>
-            <figure data-dummy>
-                <a href="#" class="photostack-img"><img src="img/3.jpg" class="fitImageToSlider" alt="bla"/></a>
-                <figcaption>
-                    <h2 class="photostack-title"></h2>
-                    <div class="photostack-back">
-                        <p></p>
-                    </div>
-                </figcaption>
-            </figure>
-    </section>
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
 
 </html>
